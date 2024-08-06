@@ -1,0 +1,112 @@
+.add-todo-btn {
+  background: linear-gradient(45deg, #ff6f61, #de9b8d);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-todo-btn:hover {
+  background: linear-gradient(45deg, #de9b8d, #ff6f61);
+  transform: scale(1.05);
+}
+
+.add-todo-btn:active {
+  background: linear-gradient(45deg, #ff6f61, #de9b8d);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.task-list-item {
+  background-color: #191933;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #ee9ca7;
+  transition: background-color 0.2s;
+}
+
+.checkbox:checked {
+  background-color: #4caf50;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check' stroke='%23fff'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+}
+
+.edit-input {
+  flex: 1;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: #fff;
+  color: #000;
+}
+
+.task-name {
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.completed {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: line-through rgba(255, 255, 255, 0.8);
+}
+
+.todo-details {
+  margin-top: 10px;
+  color: #ddd;
+}
+
+.action-btn {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.edit-btn {
+  color: #00bfae;
+}
+
+.delete-btn {
+  color: #ff4b5c;
+}
+
+.check-btn {
+  color: #4caf50;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 100%;
+  height: 100vh;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(62deg, rgba(1, 95, 183, 0.9732216701) 13%, rgba(255, 122, 151, 0.5) 4%), linear-gradient(44deg, rgba(0, 43, 99, 0.0792209024) 39%, rgba(242, 140, 143, 0.5) 18%), linear-gradient(118deg, rgba(84, 202, 242, 0.0315299727) 40%, rgba(247, 155, 187, 0.5) 54%), linear-gradient(58deg, rgba(90, 90, 237, 0.1614444357) 83%, rgba(249, 156, 142, 0.5) 23%);
+  background-blend-mode: normal, lighten, multiply, hard-light;
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+  background-attachment: fixed;
+}
